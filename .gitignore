@@ -1,3 +1,6 @@
 .vscode/tasks.json
 *.obj
 *.pdb
+*.dll
+*.exp
+*.lib

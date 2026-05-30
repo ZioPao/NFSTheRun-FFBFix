@@ -75,7 +75,6 @@ static void LoadConfig()
     g_periodicScale = clamp01(g_periodicScale);
 }
 
-#include "overlay.h"
 
 // ============================================================
 //  Real dinput8.dll — loaded from System32
@@ -380,11 +379,9 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD reason, LPVOID)
             GetProcAddress(g_hRealDInput8, "DirectInput8Create"));
         if (!g_realDI8Create) return FALSE;
 
-        HookDXGIPresent();
     }
     else if (reason == DLL_PROCESS_DETACH)
     {
-        ShutdownOverlay();
         if (g_hRealDInput8) FreeLibrary(g_hRealDInput8);
     }
     return TRUE;
