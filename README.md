@@ -5,7 +5,6 @@ meaning it's stuck with an absurdly strong centering spring (in my opinion, at l
 This basically fixes it by intercepting the FFB parameters and letting the user custoimze them through the .ini provided.
 
 
----
 ## Prerequisites to compile
 
 
@@ -13,7 +12,7 @@ This basically fixes it by intercepting the FFB parameters and letting the user 
   Download: https://visualstudio.microsoft.com/visual-cpp-build-tools/
   Select workload: **"Desktop development with C++"**
 
----
+
 
 ## Build
 
@@ -27,13 +26,11 @@ This basically fixes it by intercepting the FFB parameters and letting the user 
 
 3. You should get `dinput8.dll` in the same folder.
 
----
 
 ## Install
 
 Put `dinput8.dll` and `dinput8_proxy.ini` into the game folder where `NFS_Run.exe` is located.
 
----
 
 ## Tuning (dinput8_proxy.ini)
 
