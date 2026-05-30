@@ -37,19 +37,5 @@ Put `dinput8.dll` and `dinput8_proxy.ini` into the game folder where `NFS_Run.ex
 
 ## Tuning (dinput8_proxy.ini)
 
-```ini
-[FFB]
-GainScale=0.30       ; master strength (0.0–1.0)
-SpringScale=0.15     ; centering spring / damper — lower this to fix the crazy center force
-ConstantScale=0.40   ; road feel, impacts
-PeriodicScale=0.40   ; rumble strips, kerbs
-```
-
-Edit the INI while the game is closed, then restart. No recompile needed.
-
-**Suggested starting point for G29:**
-- `SpringScale=0.10` – `0.20` (centering is the main offender)
-- `GainScale=0.25` – `0.35`
-- `ConstantScale=0.35` – `0.50`
-- `PeriodicScale=0.35` – `0.50`
-
+In `dinput8_proxy.ini` you will find the exposed settings with some instructions. 
+The provided settings are what I find 'ok', but you can change it to whatever you like.
