@@ -2,3 +2,4 @@ README.md
 out/
 .vscode/tasks.json
 *.obj
+*.pdb
