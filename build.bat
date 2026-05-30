@@ -3,7 +3,7 @@
 :: Run from "x86 Native Tools Command Prompt for VS 20xx"
 setlocal
 
-set OUT=out/dinput8.dll
+set OUT=dinput8.dll
 set SRC=dinput8_proxy.cpp
 set DEF=dinput8.def
 

@@ -1,0 +1,24 @@
+name: Compile dinput8.dll
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ilammy/msvc-dev-cmd@v1
+        with: 
+          arch: amd64_x86
+      - name: Build something requiring CL.EXE
+        run: |
+          build.bat
+      - uses: actions/upload-artifact@v7
+        with:
+          name: dinput8.dll   
+          path: |
+            dinput8.dll
