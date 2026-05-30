@@ -21,6 +21,7 @@ jobs:
           .\build.bat
       - uses: actions/upload-artifact@v7
         with:
-          name: dinput8.dll   
+          name: nfs-run-ffb-fix
           path: |
             dinput8.dll
+            dinput8_proxy.ini
