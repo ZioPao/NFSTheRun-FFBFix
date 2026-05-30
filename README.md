@@ -1,4 +1,4 @@
-# dinput8_proxy — NFS The Run FFB scaler
+# NFS The Run - Wheels Force Feedback scaler
 
 NFS The Run supports Direct Input wheels, but for some reason they completely forgot to let the user customize the force-feedback settings,
 meaning it's stuck with an absurdly strong centering spring (in my opinion, at least with my G29).

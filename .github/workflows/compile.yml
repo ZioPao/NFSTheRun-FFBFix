@@ -3,8 +3,8 @@ name: Compile dinput8.dll
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    paths:
+      - '**.cpp'
 
 jobs:
   build:
